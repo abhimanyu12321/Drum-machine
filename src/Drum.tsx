@@ -12,7 +12,7 @@ function Drum({
 }) {
   const [clickFlag, setclickFlag] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
-  const { setdisplay, power } = useContext<MyContextData>(diplayContext);
+  const { setdisplay, power } = useContext(diplayContext);
 
   function handleClick() {
     setclickFlag(true);

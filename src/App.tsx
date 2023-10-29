@@ -2,7 +2,11 @@ import "./App.css";
 import { useState, createContext } from "react";
 import Drum from "./Drum";
 
-export const diplayContext = createContext<MyContextData | null>(null);
+export const diplayContext = createContext<MyContextData>({
+  display: "",
+  setdisplay: () => {},
+  power: false,
+});
 
 const audioClips: audio = {
   items: [
