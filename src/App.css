@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Russo+One");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Russo One;
+}
+
+body {
+  user-select: none;
+  background-color: #8d8d8d;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.inner-container {
+  outline: 5px solid orange;
+  position: relative;
+  width: 660px;
+  text-align: center;
+  background-color: #b3b3b3;
+}
+.inner-container .pad-bank {
+  width: 332px;
+  height: 272px;
+  display: inline-block;
+  margin: 20px;
+}
+
+.inner-container .pad-bank .drum-pad {
+  position: relative;
+  float: left;
+  width: 100px;
+  height: 80px;
+  margin-right: 10px;
+  border-radius: 5px;
+  padding-top: 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.drum-pad {
+  background-color: grey;
+  margin-top: 10px;
+  box-shadow: black 3px 3px 5px;
+  font-weight: 900;
+}
+.inner-container .logo {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+.inner-container .logo .inner-logo {
+  display: inline-block;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+}
+.inner-container .controls-container {
+  width: 240px;
+  height: 272px;
+  display: inline-block;
+  margin: 40px 20px 0 10px;
+  vertical-align: top;
+}
+.inner-container .controls-container .control {
+  width: 100px;
+  margin: auto;
+}
+.inner-container .controls-container .control p {
+  margin-bottom: 0;
+}
+.inner-container .controls-container #display {
+  width: 200px;
+  background-color: gray;
+  margin: 15px auto;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.outer-select,
+.inner-container .controls-container .control .select {
+  margin: auto;
+  border: 1px solid black;
+  width: 50px;
+  height: 20px;
+  padding: 1px;
+  background-color: black;
+}
+
+.inner-select,
+.inner-container .controls-container .control .select .inner {
+  width: 23px;
+  height: 19px;
+  background: blue;
+  border: 1px solid black;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+  .inner-container {
+    transform: scale(0.7);
+  }
+}
