@@ -92,7 +92,7 @@ function App() {
               ></div>
             </div>
           </div>
-          <p id="display">{display}</p>
+          <p id="display">{power ? display : ""}</p>
         </div>
       </div>
     </diplayContext.Provider>
